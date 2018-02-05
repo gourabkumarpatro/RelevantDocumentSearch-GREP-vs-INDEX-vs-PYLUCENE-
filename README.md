@@ -12,6 +12,7 @@ The objective is to use three different methods to retrieve all the relevant doc
 ## COMPARISION TABLE 
 
 | Method | GREP | INDEX-NLTK | PYLUCENE |
+|--------|------|------------|----------|
 | Mean Recall | 0.6736 | 0.7578 | 0.7031 |
 | Mean Exec Time (Sec) | 0.8487 | 0.0019 | 0.0015 |
 
