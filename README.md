@@ -1,6 +1,6 @@
 # RelevantDocumentSearch
 ## (Comparing GREP-vs-INDEX-vs-PYLUCENE)
-Dataset_link=
+Dataset_link=https://drive.google.com/open?id=1pogGFFrn_WjIKn5uTKQ_mw4N4CIhalQF
 The folder contains query.txt, output.txt, alldocs.rar.
 1. query.txt contains total 82 queries, which has 2 columns query id and query.
 2. alldocs.rar contains documents file named with doc id. Each document has set of sentences.
