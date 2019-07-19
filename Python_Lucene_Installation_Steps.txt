@@ -1,0 +1,36 @@
+Pyhton-Lucene installation steps in Ubuntu(tested in 16.04):
+
+Update apt:
+sudo apt-get update
+
+Install Java:
+sudo apt-get install openjdk-8-jre-headless openjdk-8-jre openjdk-8-jdk
+
+Install python
+sudo apt-get install python
+
+Install python-lucene(optional):
+sudo apt-get install python-lucene
+
+Install anaconda2(full python)
+For 32 bit download and install from:
+https://repo.continuum.io/archive/Anaconda2-5.0.1-Linux-x86.sh
+For 64 bit download and install from:
+https://repo.continuum.io/archive/Anaconda2-5.0.1-Linux-x86_64.sh
+
+Then go to <anaconda2 install dir>/bin
+
+Open a terminal there.
+
+Now run the following command:
+./conda install -c kalefranz pylucene
+
+Then run (each time when open a terminal to use pylucene): (if your anaconda installed in your home folder. Otherwise change the path accordingly)
+export LD_LIBRARY_PATH=/home/$USER/anaconda2/lib:/home/$USER/anaconda2/jre/lib:/home/$USER/anaconda2/jre/lib/amd64:/home/$USER/anaconda2/jre/lib/amd64/server:/home/$USER/anaconda2/lib/python2.7/site-packages:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64:$LD_LIBRARY_PATH
+
+or 
+
+As a permanent solution you can add this command at the end of the .bashrc file(a hidden file inside your home folder use (Ctrl+H to see the hidden files))
+
+Then use the following command to run your pylucene program:
+<anaconda2 install dir (default is anaconda2 folder in your home)>/bin/python <your pylucene program file>
